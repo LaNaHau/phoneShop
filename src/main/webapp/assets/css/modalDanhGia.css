@@ -1,0 +1,77 @@
+.modal-danh-gia {
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	bottom: 0;
+	background: rgba(0, 0, 0, 0.4);
+	display: none;   
+	
+}
+
+.modal-danh-gia-container{
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	left:0;
+	background-color: white;
+	height: 500px;
+	animation: modalDanhGia ease .5s;
+
+}
+
+.modal-danh-gia-header h1{
+	text-align:center;
+}
+.checked {
+  color: orange;
+}
+.open-modal-danh-gia{
+	display:block;
+}
+ 
+
+.star-widget {
+	display: inline block;	
+}
+
+/* #rate-5, 
+#rate-4, 
+#rate-3, 
+#rate-2, 
+#rate-1,  */
+.star-widget input {
+	display: none;
+}
+.star-widget label {
+	font-size: 20px;
+	color:#444;
+	padding:10px;
+	transition: all 0.2s ease;
+	float: right;
+
+}
+
+.star-widget input:not(:checked) ~ label:hover ~ label,
+.star-widget input:not(:checked) ~ label:hover{
+	color:#fd4;
+}
+
+.star-widget input:checked ~ label {
+	color: #fd4;	
+}
+
+/* .star-widget input#rate-5:checked ~ label{
+	color: #fe7;
+	text-shadow: 0 0 20px #952;
+} */
+@keyframes modalDanhGia{
+	from {
+		opacity:0;
+		width:0%;
+	}
+	to {
+		opacity:1;
+		width:100%;
+	}
+}

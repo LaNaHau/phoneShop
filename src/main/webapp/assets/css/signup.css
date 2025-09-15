@@ -1,0 +1,140 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+.auth-background {
+    background-image: url('/ShopDienThoai/assets/img/login/bg.jpg'); /* Thay đổi URL nếu cần */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-container {
+    background: rgba(0, 0, 0, 0.3); /* Nền mờ */
+    padding: 30px;
+    border-radius: 10px;
+    width: 100%; /* Chiếm toàn bộ chiều ngang */
+    max-width: 400px; /* Giới hạn chiều rộng */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Căn giữa tiêu đề và nội dung */
+    margin: 0 auto; /* Đảm bảo căn giữa container */
+}
+
+.auth-container h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    color: #fff;
+    text-align: center; /* Căn giữa tiêu đề */
+}
+
+.auth-container p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Khoảng cách giữa các phần tử */
+}
+
+.auth-form .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Căn lề trái cho nhãn */
+    width: 100%; /* Chiếm toàn bộ chiều rộng container */
+}
+
+.auth-form label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+    text-align: left; /* Căn lề trái cho nhãn */
+}
+
+.auth-form .form-control {
+    width: 96%; /* Tràn đầy container */
+    padding: 6px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 14px;
+}
+
+.auth-form .btn-submit {
+    width: 100%; /* Tràn đầy container */
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background: #ff7b7b;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background 0.3s;
+}
+
+.auth-form .btn-submit:hover {
+    background: #ff4a4a;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 15px 0;
+}
+
+.options a {
+    color: #ff7b7b;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: #ff4a4a;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+/* Đặt nút Home ở góc trên trái */
+.home-button {
+    position: absolute;  /* Đặt nó ở vị trí tuyệt đối */
+    top: 20px;           /* Cách cạnh trên 20px */
+    left: 20px;          /* Cách cạnh trái 20px */
+    text-align: center;
+    z-index: 10;         /* Đảm bảo nút home luôn ở trên các phần tử khác */
+}
+
+.btn-home {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-home:hover {
+    background-color: #45a049;
+}

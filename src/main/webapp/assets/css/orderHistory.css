@@ -1,0 +1,25 @@
+
+
+
+.btn-trangThai{
+    border: 2px solid #ff6666;
+    border-radius: 5px;
+    background-color: white;
+    color: #ff6666;
+    margin: 4px;
+}
+
+
+.btn-trangThai-active {
+    color: white;
+    background-color: #ff6666;
+}
+
+.body-content-active {
+	display: block !important;
+}
+
+
+.container .body-content {
+	display: none;
+}

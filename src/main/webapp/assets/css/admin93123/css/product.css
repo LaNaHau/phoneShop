@@ -1,0 +1,31 @@
+.tm-content-row {
+    margin: 0 auto; /* Căn giữa */
+    max-width: 1200px; /* Chiều rộng tối đa */
+    padding: 20px; /* Khoảng cách bên trong */
+}
+
+.tm-content-row .col-sm-12,
+.tm-content-row .col-md-12,
+.tm-content-row .col-lg-8,
+.tm-content-row .col-xl-8 {
+    padding: 20px; /* Tăng khoảng cách giữa các cột */
+}
+
+
+.container.mt-5 {
+    width: 90%; /* Thay đổi giá trị này để tăng hoặc giảm chiều rộng */
+    max-width: 1200px; /* Thay đổi max-width nếu muốn giới hạn chiều rộng tối đa */
+    margin-top: 50px; /* Tăng khoảng cách trên nếu cần */
+    padding: 30px; /* Tăng khoảng cách bên trong container */
+}
+
+@media (max-width: 768px) {
+    /* Đảm bảo thiết kế linh hoạt trên màn hình nhỏ */
+    .tm-content-row {
+        padding: 10px;
+    }
+
+    .tm-content-row .col-sm-12 {
+        padding: 10px;
+    }
+}

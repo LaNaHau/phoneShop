@@ -1,0 +1,38 @@
+
+.fa-star:before {
+    content: "\f005";
+}
+
+.fa, .far, .fas {
+    font-family: "Font Awesome 5 Free";
+}
+
+.soSaotb{
+	color:#ff6a00;
+}
+
+.truncate-text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+    }
+    
+.btn-them {
+    margin-top: 15px; /* Đẩy nút xuống thêm 15px */
+    /* Hoặc sử dụng padding nếu cần */
+    padding-top: 10px;
+    position: relative; /* Điều chỉnh vị trí chính xác */
+    top: 5px; /* Tùy chỉnh giá trị để phù hợp với giao diện */
+}
+.custom-message {
+    font-style: italic;
+    font-size: 1.5rem;
+    color: blue; /* Màu chữ xanh */
+    padding: 10px 15px; /* Khoảng đệm xung quanh nội dung */
+    border-radius: 5px; /* Bo góc nhẹ */
+    display: block; /* Đảm bảo thông báo chiếm toàn bộ chiều ngang */
+    margin: 10px 0; /* Khoảng cách trên và dưới */
+    text-align: left; /* Căn giữa nội dung */
+}
+

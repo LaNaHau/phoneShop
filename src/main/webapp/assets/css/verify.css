@@ -1,0 +1,137 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    background: #000;
+    color: #fff;
+}
+
+.auth-background {
+    background-image: url('/ShopDienThoai/assets/img/login/bg.jpg'); /* Sử dụng đường dẫn gốc */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.auth-container {
+    background: rgba(0, 0, 0, 0.3); /* Nền mờ */
+    padding: 30px;
+    border-radius: 10px;
+    width: 40%; /* Giới hạn chiều rộng */
+    max-width: 400px; /* Giới hạn chiều rộng tối đa */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.auth-container h1 {
+    font-size: 30px;
+    margin-bottom: 10px;
+    text-align: center; /* Đảm bảo thẻ h1 căn giữa */
+}
+
+.auth-container p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+}
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px; /* Khoảng cách giữa các nhóm form */
+}
+
+.auth-form .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Căn lề trái cho label */
+    width: 100%; /* Đảm bảo nhóm form chiếm toàn bộ container */
+}
+
+.auth-form label {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.auth-form .form-control {
+    width: 95%; /* Tràn đầy container */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #fff;
+    font-size: 14px;
+}
+
+.auth-form .btn-submit {
+    width: 100%; /* Nút bấm tràn container */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #ff7b7b;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background 0.3s;
+}
+
+.auth-form .btn-submit:hover {
+    background: #ff4a4a;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 15px 0;
+}
+
+.options a {
+    color: #ff7b7b;
+    text-decoration: none;
+}
+
+.options a:hover {
+    text-decoration: underline;
+}
+
+.error {
+    color: #ff4a4a;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.form-input {
+    display: flex; /* Đặt các input trên cùng một hàng */
+    justify-content: center; /* Căn giữa các ô nhập */
+    gap: 10px; /* Khoảng cách giữa các ô */
+}
+
+.input-char {
+    width: 40px; /* Chiều rộng của mỗi ô */
+    height: 40px; /* Chiều cao của mỗi ô */
+    text-align: center; /* Chữ nằm giữa ô */
+    font-size: 18px; /* Kích thước chữ */
+    border: 2px solid rgba(255, 255, 255, 0.6); /* Đường viền */
+    border-radius: 8px; /* Bo góc */
+    background: rgba(255, 255, 255, 0.2); /* Nền mờ */
+    color: #fff; /* Màu chữ */
+    outline: none; /* Loại bỏ viền khi focus */
+    transition: border-color 0.3s;
+}
+
+.input-char:focus {
+    border-color: #ff7b7b; /* Đổi màu viền khi được chọn */
+}
+
